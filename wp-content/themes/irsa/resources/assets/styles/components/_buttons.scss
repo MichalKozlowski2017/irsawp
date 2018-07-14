@@ -1,0 +1,27 @@
+.button {
+    button {
+        font-family: $font;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        font-size: 12px;
+        padding: 15px 30px 15px 31px;
+        border-radius: 30px;
+        border: 2px solid $color-primary;
+        cursor: pointer;
+        transition: .5s;
+        @include mq($min-width: 575px) {
+            font-size: 16px;
+        }
+    }
+    &--light {
+        button {
+            background-color: transparent;
+            color: #fff;
+            &:hover {
+                background-color: $color-primary;
+                color: #fff;
+            }
+        }
+    }
+}

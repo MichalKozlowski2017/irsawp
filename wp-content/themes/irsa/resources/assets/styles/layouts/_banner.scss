@@ -5,7 +5,7 @@
     background-repeat: no-repeat;
     padding-top: 120px;
     &__overlay {
-        background-color: rgba(0,0,0,0.5);
+        background-color: rgba(0,0,0,0.7);
         position: absolute;
         width: 100%;
         height: 100%;
@@ -14,8 +14,93 @@
     }
     &__wrapper {
         z-index: 4;
+        position: absolute;
+        left: 50%;
+        top: 30%;
+        transform: translate(-50%);
+        width: 90%;
         &__text {
-
+            text-align: center;
+            color: #fff;
+            font-family: $font-heading;
+            h2 {
+                font-size: 56px;
+                font-weight: bold;
+                position: relative;
+                span {
+                    color: $color-primary;
+                }
+                &:after {
+                    content: '';
+                    width: 110px;
+                    height: 19px;
+                    background-image: url('../../images/after.png');
+                    background-size: 110px 19px;
+                    position: absolute;
+                    bottom: -30px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+                @include mq($min-width: 575px) {
+                    font-size: 86px;
+                }
+            }
+            h1 {
+                font-size: 22px;
+                margin-top: 50px;
+                letter-spacing: 2px;
+                @include mq($min-width: 575px) {
+                    font-size: 32px;
+                    margin-top: 50px;
+                    letter-spacing: 6px;
+                }
+            }
+            p {
+                font-family: $font;
+                font-size: 12px;
+                line-height: 1.2;
+                width: 90%;
+                letter-spacing: 1px;
+                font-weight: 300;
+                max-width: 500px;
+                margin: 20px auto;
+                margin-bottom: 40px;
+                @include mq($min-width: 575px) {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .btn-down {
+        background-color: #fff;
+        position: absolute;
+        display: block;
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+        width: 25px;
+        height: 25px;
+        bottom: 30px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        text-align: center;
+        text-decoration: none;
+        line-height: 25px;
+        vertical-align: middle;
+        -webkit-transform: rotate(45deg) translate(0px, 0px);
+        -ms-transform: rotate(45deg) translate(0px, 0px);
+        transform: rotate(45deg) translate(0px, 0px);
+        z-index: 2;
+        i {
+            font-size: 12px;
+            color: #1d1d1d;
+            line-height: 0;
+            -webkit-transform: rotate(-45deg) translate(-50%, -50%);
+            -ms-transform: rotate(-45deg) translate(-50%, -50%);
+            transform: rotate(-45deg) translate(-50%, -50%);
+            left: 50%;
+            top: 40%;
+            position: absolute;
         }
     }
 }

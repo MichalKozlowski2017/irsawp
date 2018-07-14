@@ -1,7 +1,12 @@
 /** Import Bootstrap functions */
 @import "~bootstrap/scss/functions";
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,700&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin-ext');
 /* Colors */
-$color-primary: #C69C6C;
+$color-primary: #C69C68;
 
 /* Fonts */
 $font: 'Poppins', sans-serif;
+$font-heading: 'Roboto', sans-serif;

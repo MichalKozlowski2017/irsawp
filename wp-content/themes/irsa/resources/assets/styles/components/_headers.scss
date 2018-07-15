@@ -22,5 +22,10 @@
             margin-top: 20px;
             font-weight: 300;
         }
+        em {
+            text-transform: none;
+            font-style:normal;
+            color: $color-primary;
+        }
     }
 }

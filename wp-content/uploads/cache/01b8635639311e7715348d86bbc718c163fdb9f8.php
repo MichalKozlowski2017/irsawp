@@ -10,9 +10,11 @@ $tables = get_field( 'oferta_tables' );
         <div class="row">
             <div class="section-title col-sm-12">
                 <h2><?php echo e($title); ?></h2>
+                <?php if($subtitle): ?>
                 <p class="section-title__subtitle">
                     <?php echo $subtitle; ?>
                 </p>
+                <?php endif; ?>
             </div>
             <?php if($icons): ?>
             <div class="oferta__icons col-sm-12">
@@ -31,18 +33,18 @@ $tables = get_field( 'oferta_tables' );
             <?php if($tables): ?>
             <div class="oferta__tables">
                 <?php $__currentLoopData = $tables; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $table): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                    <div class="oferta__tables__table table">
-                        <div class="oferta__tables__table__header table__header">
+                    <div class="oferta__tables__table table-ul">
+                        <div class="oferta__tables__table__header table-ul__header">
                             <h2><?php echo e($table['header']); ?></h2>
                         </div>
-                        <div class="oferta__tables__table__body table__body">
+                        <div class="oferta__tables__table__body table-ul__body">
                             <ul>
                             <?php $__currentLoopData = $table['points']; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $point => $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                                 <li><?php echo e($value['text']); ?></li>
                             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                             </ul>
                         </div>
-                        <div class="oferta__tables__table__button table__button">
+                        <div class="oferta__tables__table__button table-ul__button">
                             <a href='#kontakt' class="button button--dark">
                                 <button>
                                     <?php echo e($table['button_text']); ?>

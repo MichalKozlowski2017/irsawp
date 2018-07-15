@@ -24,4 +24,13 @@
             }
         }
     }
+    &--dark {
+        button {
+            color: #fff;
+            background-color: $color-primary;
+            &:hover {
+                background-color: $color-hover;
+            }
+        }
+    }
 }

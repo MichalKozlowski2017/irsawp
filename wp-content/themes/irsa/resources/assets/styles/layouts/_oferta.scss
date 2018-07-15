@@ -1,0 +1,95 @@
+.oferta {
+    background-color: #fafafa;
+    &__icons {
+        &__wrapper {
+            display: -webkit-flex;
+            display: -ms-flex;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            margin-top: 50px;
+            @include mq($min-width:992px) {
+                flex-direction: row;
+            }
+            &__icon {
+                width: 100%;
+                margin-bottom: 50px;
+
+                @include mq($min-width:992px) {
+                    width: 25%;
+                }
+                &__container {
+                    &:hover {
+                        border: 3px solid $color-primary;
+                        div {
+                            background-color: $color-primary;
+                        }
+                    }
+                    border: 3px solid rgba(66, 66, 66, 0.47);
+                    height: 195px;
+                    width: 195px;
+                    text-align: center;
+                    margin: 0 auto;
+                    margin-bottom: 35px;
+                    -webkit-transition: all .26s ease;
+                    transition: all .26s ease;
+                    div {
+                        width: 90px;
+                        height: 90px;
+                        background-color: #424242;
+                        display: inline-block;
+                        position: relative;
+                        top: 50%;
+                        -webkit-transform: translateY(-50%);
+                        -ms-transform: translateY(-50%);
+                        transform: translateY(-50%);
+                        -webkit-transition: all ease 0.75s;
+                        transition: all ease 0.75s;
+                        i {
+                            position: relative;
+                            top: 50%;
+                            -webkit-transform: translateY(-50%);
+                            -ms-transform: translateY(-50%);
+                            transform: translateY(-50%);
+                            font-size: 40px;
+                            color: #fff;
+                        }
+
+                    }
+                }
+                h3 {
+                    font-size: 1.125rem;
+                    font-weight: 600;
+                    margin: 0 auto;
+                    margin-bottom: 10px;
+                    line-height: 1.5;
+                    color: #555;
+                    text-align: center;
+                    width: 220px;
+                    @include mq($min-width:992px) {
+                        width: auto;
+                    }
+                }
+            }
+        }
+    }
+    &__tables {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-direction: column;
+        &__table {
+            width: 100%;
+        }
+        @include mq($min-width:768px) {
+            flex-direction: row;
+            &__table {
+                width: 47%;
+            }
+        }
+    }
+}

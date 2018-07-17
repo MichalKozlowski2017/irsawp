@@ -6,5 +6,6 @@
 @include('partials.cennik')
 @include('partials.promo')
 @include('partials.contact')
+@include('partials.map')
 {!! get_the_posts_navigation() !!}
 @endsection

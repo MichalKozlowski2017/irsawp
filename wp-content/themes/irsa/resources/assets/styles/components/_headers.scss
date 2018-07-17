@@ -28,4 +28,21 @@
             color: $color-primary;
         }
     }
+    &--dark {
+        h2 {
+            color: #fff;
+            font-size: 27px;
+            letter-spacing: 1px;
+            &:after {
+                content: "";
+                display: block;
+                height: 2px;
+                width: 55px;
+                background-color: #c69c6d;
+                margin: 0 auto;
+                margin-top: 13px;
+                margin-bottom: 18px;
+            }
+        }
+    }
 }

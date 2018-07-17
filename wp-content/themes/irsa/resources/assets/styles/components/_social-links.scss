@@ -1,0 +1,39 @@
+ul.social-links {
+    li {
+        font-size: 14px;
+        line-height: 14px;
+        display: inline-block;
+        margin-left: 0;
+        @include mq($min-width:768px) {
+            margin-left: 20px;
+        }
+        a {
+            -webkit-transform: rotate(45deg) translate(0px, 0px);
+            -ms-transform: rotate(45deg) translate(0px, 0px);
+            transform: rotate(45deg) translate(0px, 0px);
+            list-style: none;
+            background-color: #c69c6d;
+            -webkit-border-radius: 4px;
+            border-radius: 4px;
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            line-height: 32px;
+            vertical-align: middle;
+            text-align: center;
+            -webkit-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+            color: #fff;
+            i {
+                color: #fff;
+                margin-right: auto;
+                -webkit-transform: rotate(-45deg) translate(0px, 0px);
+                -ms-transform: rotate(-45deg) translate(0px, 0px);
+                transform: rotate(-45deg) translate(0px, 0px);
+            }
+            &:hover {
+                background-color: #333;
+            }
+        }
+    }
+}

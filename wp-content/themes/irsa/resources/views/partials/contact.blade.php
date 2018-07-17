@@ -8,7 +8,7 @@ $social_links = get_field('social_links');
 <section class="contact section">
     <div class="container">
         <div class="row">
-            <div class="section-title col-sm-12">
+            <div class="section-title section-title--dark col-sm-12">
                 <h2>{{$title}}</h2>
                 @if($subtitle)
                 <p class="section-title__subtitle">
@@ -21,9 +21,9 @@ $social_links = get_field('social_links');
             <div class="contact__left col-md-6">
                 <div class="contact-wrap">
                     @foreach ($contact_left as $key => $value)
-                        <p><i aria-hidden="true" class="{{$value['icon']}}"></i>{{$value['text']}}</p>
+                        <p class="contact__left__phones"><i aria-hidden="true" class="{{$value['icon']}}"></i>{{$value['text']}}</p>
                     @endforeach
-                    <p class="contact__left">@php echo $adres; @endphp</p>
+                    <p class="contact__left__street">@php echo $adres; @endphp</p>
                     <!--Start social links-->
                     <ul class="social-links">
                         @foreach ($social_links as $key => $link)

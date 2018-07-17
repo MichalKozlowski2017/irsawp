@@ -31,7 +31,7 @@ $tables = get_field( 'oferta_tables' );
             </div>
             @endif
             @if($tables)
-            <div class="oferta__tables">
+            <div class="oferta__tables col-sm-12">
                 @foreach ($tables as $table)
                     <div class="oferta__tables__table table-ul">
                         <div class="oferta__tables__table__header table-ul__header">

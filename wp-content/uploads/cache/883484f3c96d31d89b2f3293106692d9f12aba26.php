@@ -8,7 +8,7 @@ $social_links = get_field('social_links');
 <section class="contact section">
     <div class="container">
         <div class="row">
-            <div class="section-title col-sm-12">
+            <div class="section-title section-title--dark col-sm-12">
                 <h2><?php echo e($title); ?></h2>
                 <?php if($subtitle): ?>
                 <p class="section-title__subtitle">
@@ -21,9 +21,9 @@ $social_links = get_field('social_links');
             <div class="contact__left col-md-6">
                 <div class="contact-wrap">
                     <?php $__currentLoopData = $contact_left; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $key => $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                        <p><i aria-hidden="true" class="<?php echo e($value['icon']); ?>"></i><?php echo e($value['text']); ?></p>
+                        <p class="contact__left__phones"><i aria-hidden="true" class="<?php echo e($value['icon']); ?>"></i><?php echo e($value['text']); ?></p>
                     <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                    <p class="contact__left"><?php echo $adres; ?></p>
+                    <p class="contact__left__street"><?php echo $adres; ?></p>
                     <!--Start social links-->
                     <ul class="social-links">
                         <?php $__currentLoopData = $social_links; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $key => $link): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>

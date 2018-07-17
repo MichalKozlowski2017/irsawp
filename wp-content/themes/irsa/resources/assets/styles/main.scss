@@ -19,6 +19,7 @@
 @import "components/headers";
 @import "components/tables";
 @import "components/wp-classes";
+@import "components/social-links";
 @import "layouts/header";
 @import "layouts/banner";
 @import "layouts/oferta";
@@ -26,3 +27,8 @@
 @import "layouts/promo";
 @import "layouts/contact";
 @import "layouts/footer";
+
+
+.map {
+    height: 400px;
+}

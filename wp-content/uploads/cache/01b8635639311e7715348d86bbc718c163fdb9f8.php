@@ -31,7 +31,7 @@ $tables = get_field( 'oferta_tables' );
             </div>
             <?php endif; ?>
             <?php if($tables): ?>
-            <div class="oferta__tables">
+            <div class="oferta__tables col-sm-12">
                 <?php $__currentLoopData = $tables; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $table): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                     <div class="oferta__tables__table table-ul">
                         <div class="oferta__tables__table__header table-ul__header">
